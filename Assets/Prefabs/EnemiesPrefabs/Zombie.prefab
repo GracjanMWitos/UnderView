@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5591001979003338714}
   - component: {fileID: 5591001979003338688}
   - component: {fileID: 5591001979003338715}
+  - component: {fileID: 1726820774473630117}
   m_Layer: 10
   m_Name: Zombie
   m_TagString: Enemy
@@ -185,8 +186,8 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 1
-  pickNextWaypointDist: 1
+  slowdownDistance: 0.5
+  pickNextWaypointDist: 2
   endReachedDistance: 0.2
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
@@ -247,3 +248,18 @@ MonoBehaviour:
   bigHurt: {fileID: 7310834967986421143, guid: ea7130e76dc285a429e3e3591e4f7d49, type: 3}
   hurt: {fileID: 0}
   maxHealth: 20
+--- !u!114 &1726820774473630117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5591001979003338690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 762904b8c37b5594e90a5fb5dd3b02f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 1
+  nextWaypointDistance: 3
