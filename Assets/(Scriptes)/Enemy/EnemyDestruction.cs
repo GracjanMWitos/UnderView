@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyDestruction : MonoBehaviour
 {
     [Header("EnemyStatistics")]
-    public int health;
+    public int currentHealth;
     [Header("OnProjectileSensitivity")]
     public int damageWeapon1;
     public int damageWeapon2;
@@ -25,19 +25,19 @@ public class EnemyDestruction : MonoBehaviour
 
     void Update()
     {
-        if (health <= maxHealth && health > maxHealth / 2)
+        if (currentHealth <= maxHealth && currentHealth > maxHealth / 2)
         {
             hurt = smallHurt;
         }
-        else if (health <= maxHealth / 2 && health > maxHealth / 4)
+        else if (currentHealth <= maxHealth / 2 && currentHealth > maxHealth / 4)
         {
             hurt = mediumHurt;
         }
-        else if (health <= maxHealth/4 && health > 0)
+        else if (currentHealth <= maxHealth/4 && currentHealth > 0)
         {
             hurt = bigHurt;
         }
-        else if (health <= 0)
+        else if (currentHealth <= 0)
         {
             Destroy(gameObject);
         }
@@ -47,7 +47,7 @@ public class EnemyDestruction : MonoBehaviour
 
         if (other.collider.CompareTag("Projectile"))
         {
-            health -= damageWeapon1;
+            currentHealth -= damageWeapon1;
             Rigidbody2D Hurt = Instantiate(hurt, transform.position, transform.rotation);
         }
     }

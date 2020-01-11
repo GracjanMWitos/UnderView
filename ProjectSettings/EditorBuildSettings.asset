@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/(Scenes)/Menu.unity
     guid: f2b496797686220498b3c22bb4105dd6
   - enabled: 1
-    path: Assets/(Scenes)/LVL0.unity
+    path: Assets/(Scenes)/Prolog.unity
     guid: 70782408c2348c14594126061d69a097
   - enabled: 1
     path: Assets/(Scenes)/LVL1.unity
