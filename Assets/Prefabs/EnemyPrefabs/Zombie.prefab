@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 2931222362610198420}
   - component: {fileID: 2931222362610198421}
   - component: {fileID: 2931222362610198423}
-  - component: {fileID: 1152867038009613262}
-  m_Layer: 10
+  - component: {fileID: 1304985911770766895}
+  m_Layer: 11
   m_Name: Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 5
+  maxSpeed: 4
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -183,13 +183,13 @@ MonoBehaviour:
   orientation: 1
   enableRotation: 1
   targetCompatibility: {fileID: 0}
-  maxAcceleration: -2.5
+  maxAcceleration: 1
   rotationSpeed: 360
   slowdownDistance: 0
-  pickNextWaypointDist: 3
+  pickNextWaypointDist: 2
   endReachedDistance: 0.001
   alwaysDrawGizmos: 0
-  slowWhenNotFacingTarget: 0
+  slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
 --- !u!114 &2931222362610198421
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60517cb947dc3044eb5379090bc3d3a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 20
+  currentHealth: 30
   damageWeapon1: 6
   damageWeapon2: 7
   damageWeapon3: 12
@@ -230,8 +230,8 @@ MonoBehaviour:
     type: 3}
   bigHurt: {fileID: 7310834967986421143, guid: ea7130e76dc285a429e3e3591e4f7d49, type: 3}
   hurt: {fileID: 0}
-  maxHealth: 20
---- !u!60 &1152867038009613262
+  maxHealth: 30
+--- !u!60 &1304985911770766895
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,7 +248,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.525, y: 1.55}
+    oldSize: {x: 0.983871, y: 1}
     newSize: {x: 0.61, y: 0.62}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -256,22 +256,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.58750004, y: 0.77500004}
-      - {x: 0.3625, y: 0.77500004}
-      - {x: 0.2375, y: 0.7}
-      - {x: 0.2375, y: 0.5}
-      - {x: 0.26250002, y: 0.2}
-      - {x: -0.0875, y: 0.32500002}
-      - {x: -0.4375, y: 0.22500001}
-      - {x: -0.112500004, y: 0.7}
-      - {x: -0.26250002, y: 0.77500004}
-      - {x: -0.5625, y: 0.77500004}
-      - {x: -0.7625, y: 0.475}
-      - {x: -0.7625, y: -0.125}
-      - {x: -0.6875, y: -0.3}
-      - {x: -0.3125, y: -0.75}
-      - {x: -0.2375, y: -0.77500004}
-      - {x: 0.2375, y: -0.77500004}
-      - {x: 0.5625, y: -0.52500004}
-      - {x: 0.7625, y: -0.125}
-      - {x: 0.7625, y: 0.45000002}
+    - - {x: 0.37903225, y: 0.5}
+      - {x: 0.23387095, y: 0.5}
+      - {x: 0.15322581, y: 0.4516129}
+      - {x: 0.15322581, y: 0.32258064}
+      - {x: 0.16935483, y: 0.12903225}
+      - {x: -0.05645161, y: 0.20967741}
+      - {x: -0.28225806, y: 0.14516129}
+      - {x: -0.07258064, y: 0.4516129}
+      - {x: -0.16935483, y: 0.5}
+      - {x: -0.3629032, y: 0.5}
+      - {x: -0.49193546, y: 0.30645162}
+      - {x: -0.49193546, y: -0.08064516}
+      - {x: -0.44354838, y: -0.19354838}
+      - {x: -0.20161289, y: -0.48387095}
+      - {x: -0.15322581, y: -0.5}
+      - {x: 0.15322581, y: -0.5}
+      - {x: 0.3629032, y: -0.33870965}
+      - {x: 0.49193546, y: -0.08064516}
+      - {x: 0.49193546, y: 0.29032257}
