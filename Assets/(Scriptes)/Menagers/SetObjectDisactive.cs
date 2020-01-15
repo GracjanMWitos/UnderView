@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpritesDisactive : MonoBehaviour
+public class SetObjectDisactive : MonoBehaviour
 {
-    public GameObject objectToDestroy;
+    public GameObject objectToDisactive;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {
-            objectToDestroy.SetActive(false);
+            objectToDisactive.SetActive(false);
         }
     }
 }
