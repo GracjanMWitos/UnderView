@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8525442229182297395}
   - component: {fileID: 8525442229182297394}
+  - component: {fileID: 9153528891925203908}
   - component: {fileID: 8525442229182297388}
-  - component: {fileID: 8525442229182297389}
   - component: {fileID: 8525442229182297390}
+  - component: {fileID: 8525442229182297389}
   - component: {fileID: 8525442229182297391}
   - component: {fileID: 7162869470639297488}
   m_Layer: 10
@@ -86,6 +87,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &9153528891925203908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8525442229182297393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 588a3bcba98478b4c8012929fd8bc441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  maxStamina: 20
+  curHealth: 0
+  curStamina: 0
+  isDamage: 0
 --- !u!114 &8525442229182297388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,12 +119,25 @@ MonoBehaviour:
   playerSpeed: 0
   playerWalkSpeed: 2
   playerRunSpeed: 5
-  AccelerationFactor: 1.5
-  walkDecelerationFactor: 0
-  runDecelerationFactor: 0
-  turnSpeed: 1
-  health: 10
   isRuning: 0
+--- !u!114 &8525442229182297390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8525442229182297393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3993ec6bc90a274793ffb475d54c513, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gun: {fileID: 8525442230485891279}
+  bullet: {fileID: 3000182439832175539, guid: 4811b2249842aa94ab20e4fabde77706, type: 3}
+  loudPoint: {fileID: 3000182439832175539, guid: 4811b2249842aa94ab20e4fabde77706,
+    type: 3}
+  gunShot: {fileID: 8300000, guid: 0a9f293a6041afd43a0386a1dfbc2f38, type: 3}
+  Sound: {fileID: 0}
 --- !u!50 &8525442229182297389
 Rigidbody2D:
   serializedVersion: 4
@@ -128,24 +159,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8525442229182297390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8525442229182297393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3993ec6bc90a274793ffb475d54c513, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gun: {fileID: 8525442230485891279}
-  bullet: {fileID: 3000182439832175539, guid: 4811b2249842aa94ab20e4fabde77706, type: 3}
-  loudPoint: {fileID: 3000182439832175539, guid: 4811b2249842aa94ab20e4fabde77706,
-    type: 3}
-  gunShot: {fileID: 8300000, guid: 0a9f293a6041afd43a0386a1dfbc2f38, type: 3}
-  Sound: {fileID: 0}
 --- !u!82 &8525442229182297391
 AudioSource:
   m_ObjectHideFlags: 0
