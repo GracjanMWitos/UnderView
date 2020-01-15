@@ -174,7 +174,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 4
+  maxSpeed: 2.5
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 30
-  damageWeapon1: 6
+  damageWeapon1: 15
   damageWeapon2: 7
   damageWeapon3: 12
   damageWeapon4: 20
