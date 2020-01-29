@@ -7,7 +7,7 @@ public class Nightmare_AI : MonoBehaviour
     public Transform target;
     public float speed;
     Rigidbody2D rb;
-    PlayerStat playerStat;
+    
 
     void Start()
     {

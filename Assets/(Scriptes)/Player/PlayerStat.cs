@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class PlayerStat : MonoBehaviour
 {
-    [Header("PlayerStatistics")]
+    [Header("PlayerMaxStatistics")]
     public int maxHealth;
     public int maxStamina;
+    [Header("PlayerCurrrentStatistics")]
     public float curHealth;
     public float curStamina;
-    public float timer;
+    [Header("Timer")]
+    public float damageTimer;
+    [Header("IsUnder the influence of factors? ")]
     public bool isDamage;
+    [Header("EnemiesDamages")]
+    public int NightmareDamage;
 
-    private void FixedUpdate()
+    private void Update()
     {
-        if (isDamage == true)
-        {
-                curHealth -= 1/ Time.deltaTime;
-        }
+        if(damageTimer>0)
+        damageTimer -= Time.deltaTime;
         Death();
     }
     void Awake()
@@ -27,6 +30,11 @@ public class PlayerStat : MonoBehaviour
     }
      public void Death()
     {
+        if (isDamage == true && damageTimer<=0)
+        {
+            damageTimer = 0.6f;
+            curHealth -= NightmareDamage;
+        }
         if (curHealth <= 0)
         {
             Destroy(gameObject);

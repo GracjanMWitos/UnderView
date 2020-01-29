@@ -103,7 +103,9 @@ MonoBehaviour:
   maxStamina: 20
   curHealth: 0
   curStamina: 0
+  damageTimer: 0
   isDamage: 0
+  NightmareDamage: 5
 --- !u!114 &8525442229182297388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 0
   playerWalkSpeed: 2
-  playerRunSpeed: 5
+  playerRunSpeed: 4
   isRuning: 0
 --- !u!114 &8525442229182297390
 MonoBehaviour:
