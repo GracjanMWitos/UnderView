@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/(Scenes)/Prolog.unity
     guid: 70782408c2348c14594126061d69a097
-  - enabled: 1
+  - enabled: 0
     path: Assets/(Scenes)/LVL1.unity
     guid: 35c94f41972d6504aa0b27818e3c1c8e
-  - enabled: 1
+  - enabled: 0
     path: Assets/(Scenes)/LVL2.unity
     guid: 4095bf494504fac49a9111b33051e78e
-  - enabled: 1
+  - enabled: 0
     path: Assets/(Scenes)/LVL3.unity
     guid: 013747fee0e5cbf40976da28566c4820
   m_configObjects: {}

@@ -17,13 +17,12 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         bulletrb = GetComponent<Rigidbody2D>();
-        //bulletrb.velocity = new Vector2(speed, speed);//
     }
     void Update()
     {
         transform.Translate(Vector2.up * speed * Time.deltaTime);
     }
-    void OnCollisionEnter2D()
+        void OnCollisionEnter2D()
     {
         Destroy(gameObject);
     }
